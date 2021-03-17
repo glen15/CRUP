@@ -11,7 +11,11 @@
 
 .nav__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.nav__list li {
+  margin: 15px 100px;
 }
 
 .nav__link {

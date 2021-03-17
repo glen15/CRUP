@@ -8,6 +8,7 @@
 /* Screens */
 @import "screens/login.css";
 @import "screens/main.css";
+@import "screens/create.css";
 
 
 body {

@@ -5,7 +5,7 @@
   color: whitesmoke;
   padding: 15px 0px;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   margin-top: -15px;
 }
 
@@ -22,12 +22,17 @@
 
 .artwork-box {
   height: 1000vh;
-  margin: 20px 80px;
-  padding: 20px;
+  margin: 20px;
+  padding: 20px, 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  border-right: 3px solid rgba(0, 0, 0, 0.1);
+  padding-right: 40px;  
+}
+
+.artwork-box:last-child {
+  border-right: none;
 }
 
 .artwork-box__title {
@@ -93,7 +98,7 @@
 }
 
 .artwork__title {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   margin-bottom: 10px;
 }
