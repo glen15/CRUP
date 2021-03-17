@@ -2,32 +2,63 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
-.creator-box {
+.select-box {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 400px;
     height: 400px;
-    margin: 50px;
+    border-radius: 20px;
+    margin: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: relative;
 }
 
-.creator-box > div {
+.select-box > div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.creator-box > div > i {
-    font-size: 200px;
+.select-box > div > i {
+    font-size: 150px;
     margin-bottom: 30px;
 }
 
-.creator-box span {
+.select-box span {
     font-size: 50px;
     font-weight: 600;
     margin-bottom: 10px;
 }
+
+.select-box,
+.select-box::after {
+    transition:all 0.3s;
+}
+
+.select-box::before,
+.select-box::after {
+    background: var(--color);
+    border-radius: 20px;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+.select-box:hover {
+    color: white;
+}
+
+.select-box::after {
+    height: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  .select-box:hover:after {
+    height: 100%;
+  }
